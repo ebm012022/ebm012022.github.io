@@ -6,12 +6,14 @@
     <body>
         <p>Hello World</p>
         <button onclick="time()">Click for current time</button>
+        <p id="displayTime"></p>
+
         <script>
-        let today = new Date();
         function time() {
+            let today = new Date();
             document.getElementById("displayTime").innerHTML=today;
+            setTimeout(function() {time()}, 1000);
         }
         </script>
-    <p id="displayTime"></p>
     </body>
 </html>
