@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+    </head>
+    <body>
+        <p>Hello World</p>
+        <button onclick="time()">Click for current time</button>
+        <script>
+        let today = new Date();
+        function time() {
+            document.getElementById("displayTime").innerHTML=today;
+        }
+        </script>
+    <p id="displayTime"></p>
+    </body>
+</html>
